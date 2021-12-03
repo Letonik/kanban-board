@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kanban board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="title">
+            <span class="title__name">Проекты</span>
+            <img src="./Images/play-button.png" alt="">
+            <span class="title__menu">
+                <span class="title__link-gray">
+                    CRM-система /
+                </span>
+                Процессы
+            </span>
+        </div>
+        <div class="subtitle">
+            <div class="subtitle__name">
+                <img src="./Images/5.png" alt="">
+                <span class="subtitle__name-text">Процессы проекта CRM - сиситема</span>
+            </div>
+            <button>Добавить столбец</button>
+        </div>
+        <div class="board board-js">
+            <div class="column">
+                <div class="column__head">
+                    <span class="column__name">
+                        <img src="./Images/pause-1.png" alt="image">
+                        <span>Беклог</span>
+                    </span>
+                    <span class="column__panel">
+                        <img src="./Images/pen.png" alt="">
+                        <img src="./Images/delete.png" alt="" class="delete-js">
+                    </span>
+                </div>
+                <div class="column__cards-container cards-container-js">
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span>#20413:</span>
+                            <span class="card__text">Интерфейс динамики кадров на предприятии</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span>#20413:</span>
+                            <span class="card__text">Ежемесячный отчёт для куратора</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span>#20413:</span>
+                            <span class="card__text">Статистика по заявкам</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column__add column__add_active">
+                    <img src="./Images/plus.png" alt="">
+                </div>
+            </div>
+            <div class="column">
+                <div class="column__head">
+                    <span class="column__name">
+                        <img src="./Images/play-button2.png" alt="image">
+                        <span>В работе</span>
+                    </span>
+                    <span class="column__panel">
+                        <img src="./Images/pen.png" alt="">
+                        <img src="./Images/delete.png" alt="" class="delete-js">
+                    </span>
+                </div>
+                <div class="column__cards-container cards-container-js">
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span>#20413:</span>
+                            <span class="card__text">Заявки сгруппировать по заявкам</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span >#20413:</span>
+                            <span class="card__text">Ограничения по безопасности</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column__add">
+                    <img src="./Images/plus.png" alt="">
+                </div>
+            </div>
+            <div class="column">
+                <div class="column__head">
+                    <span class="column__name">
+                        <img src="./Images/checked.png" alt="image">
+                        <span>Выполнено</span>
+                    </span>
+                    <span class="column__panel">
+                        <img src="./Images/pen.png" alt="">
+                        <img src="./Images/delete.png" alt="" class="delete-js">
+                    </span>
+                </div>
+                <div class="column__cards-container line-through cards-container-js">
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span class="card__number">#20413:</span>
+                            <span class="card__text">Проживание: новое поле для тех кто работает</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span class="card__number">#20413:</span>
+                            <span class="card__text">Рейтинг мастеров в интерфейсе мереджера</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span class="card__number">#20413:</span>
+                            <span class="card__text">Перенос данных в конце месяца</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span class="card__number">#20413:</span>
+                            <span class="card__text">Доработки по интерфейсу «Плана»</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span class="card__number">#20413:</span>
+                            <span class="card__text">Подвешенная заявка</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span class="card__number">#20413:</span>
+                            <span class="card__text">Интерфейс динамики кадров на предприятии</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column__add">
+                    <img src="./Images/plus.png" alt="">
+                </div>
+            </div>
+            <div class="column">
+                <div class="column__head">
+                    <span class="column__name">
+                        <img src="./Images/checked2.png" alt="image">
+                        <span>Сдано</span>
+                    </span>
+                    <span class="column__panel">
+                        <img src="./Images/pen.png" alt="">
+                        <img src="./Images/delete.png" alt="" class="delete-js">
+                    </span>
+                </div>
+                <div class="column__cards-container cards-container-js">
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span>#20413:</span>
+                            <span class="card__text">Временной промежуток при фильтрации</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span>#20413:</span>
+                            <span class="card__text">Статистика по икочникам звонка</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span>#20413:</span>
+                            <span class="card__text">Добавить график к статистике пользователей (количества регистраций)</span>
+                        </div>
+                    </div>
+                    <div class="column__card card card-js" draggable="true">
+                        <div class="card__left-panel">
+                            <div class="card__photo">
+                                <img src="./Images/Bitmap2.png" alt="">
+                                <img src="./Images/Bitmap.png" alt="" class="card__photo-before">
+                            </div>
+                            <div>
+                                <img src="./Images/noun_chevron.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card__task">
+                            <span>#20413:</span>
+                            <span class="card__text">Создать тестовую сборку сервиса ( для обработки нововведений )</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column__add">
+                    <img src="./Images/plus.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
